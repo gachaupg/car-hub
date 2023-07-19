@@ -1,0 +1,35 @@
+import { Routes, Route } from "react-router-dom";
+import Trade from "../../modules/Trade";
+import Home from "../../modules/Home";
+import Wishlist from "../../modules/Wishlist";
+import Bid from "../../modules/Bid";
+import Login from "../../modules/Login";
+import Finance from "../../modules/Finance";
+import Blog from "../../modules/Blog";
+import Cars from "../../modules/Cars";
+import About from "../../modules/About";
+import Contact from "../../modules/Contact";
+import Header from "../../modules/Header";
+
+const AppRoutes = () => {
+  return (
+    <>
+      
+      <Header />
+      <Routes>
+        <Route path="contact" element={<Contact />} />
+        <Route path="about" element={<About />} />
+        <Route path="bid" element={<Bid />} />
+        <Route path="wishlist" element={<Wishlist />} />
+        <Route path="finance" element={<Finance />} />
+        <Route path="trade" element={<Trade />} />
+        <Route path="blog" element={<Blog />} />
+        <Route path="/" element={<Home />} />
+        <Route path="car" element={<Cars />} />
+        <Route path="login" element={<Login />} />
+      </Routes>
+    </>
+  );
+};
+
+export default AppRoutes;
